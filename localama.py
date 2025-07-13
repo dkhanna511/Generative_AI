@@ -1,12 +1,18 @@
 # from langchain_openai import ChatOpenAI
+
 from langchain_community.llms import Ollama  ## This would be for opensource LLM
 
+## used to contruct chat-style prompts
 from langchain_core.prompts import ChatPromptTemplate
+
+## Parses the model's output into a plain string
 from langchain_core.output_parsers import StrOutputParser
 # from langchain_community.llms import OpenLLM
 
-
+# streamlit is used to creat WebGUI
 import streamlit as st
+
+## For handling environment variables.
 import os
 from dotenv import load_dotenv
 
